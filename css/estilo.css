@@ -12,7 +12,7 @@ body
    height: 50px;
    display: flex;
    justify-content: center;
-   padding: 5px;
+   padding: 1px;
    background-image: linear-gradient(90deg , #A98C42 , #E8D3A0 , #998C6A);
 
 }
@@ -20,13 +20,14 @@ body
 {
     
     display: flex;
-align-content: center;
+align-items: center;
+    gap: 20px;
 
 }
 #menu a
 {
     
-    margin: 5px 50px 0 50px;
+    /*margin: 5px 50px 0 50px;*/
     font-size: 25px;
     display: flex;
     color: #695F48;
@@ -86,3 +87,23 @@ picture:after{
     height: 100%; width: 100%;
     border-radius: 50%;
 }
+@media screen and (max-width:320px){
+    #menu a{
+        /*margin: 4px 4px 0 4px;*/
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width:321px) and (max-width:700px){
+    #menu a{
+        /*margin: 5px 25px 0 20px;*/
+        font-size: 16px;
+    }
+
+}
+@media screen and (min-width:721px) and (max-width:880px){
+    #menu a{
+        /*margin: 5px 25px 0 20px;*/
+        font-size: 25px;
+    }
+
